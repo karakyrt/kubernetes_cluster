@@ -772,7 +772,7 @@ resource "aws_route53_record" "api-tarantul-qa-net" {
     evaluate_target_health = false
   }
 
-  zone_id = "/hostedzone/ZEZI8VXTRAQ4I"
+  zone_id = "/hostedzone/Z143SG7LT37JNZ"
 }
 
 resource "aws_route53_record" "bastion-tarantul-qa-net" {
@@ -785,11 +785,11 @@ resource "aws_route53_record" "bastion-tarantul-qa-net" {
     evaluate_target_health = false
   }
 
-  zone_id = "/hostedzone/ZEZI8VXTRAQ4I"
+  zone_id = "/hostedzone/Z143SG7LT37JNZ"
 }
 
-resource "aws_route53_zone_association" "ZEZI8VXTRAQ4I" {
-  zone_id = "/hostedzone/ZEZI8VXTRAQ4I"
+resource "aws_route53_zone_association" "Z143SG7LT37JNZ" {
+  zone_id = "/hostedzone/Z143SG7LT37JNZ"
   vpc_id  = "${aws_vpc.tarantul-qa-net.id}"
 }
 
